@@ -1,0 +1,19 @@
+:root {
+  --brand-red: #931717;
+  --brand-red-hover: #7d1414;
+  --brand-red-tint: #f6e9e9;
+  --bg: #ffffff;
+  --surface: #fafafb;
+  --surface-2: #f3f4f6;
+  --border: #e5e7eb;
+  --text: #111317;
+  --text-muted: #6b7280;
+  --shadow-sm: 0 1px 2px rgba(17, 19, 23, .06), 0 1px 3px rgba(17, 19, 23, .04);
+  --shadow-md: 0 8px 24px rgba(17, 19, 23, .10);
+  --shadow-lg: 0 20px 50px rgba(17, 19, 23, .16);
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --required: var(--brand-red);
+  --ease-standard: cubic-bezier(.4, 0, .2, 1);
+}

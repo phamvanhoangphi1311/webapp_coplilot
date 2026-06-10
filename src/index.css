@@ -282,7 +282,7 @@ h2 { font-size: 26px; line-height: 1.15; letter-spacing: 0; }
   animation: actionLift .62s var(--ease-standard) both;
 }
 .home-actions-left { margin-top: 32px; }
-.home-actions-left .btn { min-width: 128px; }
+.home-actions-left .btn { min-width: 132px; }
 .home-footnote {
   display: flex;
   align-items: center;
@@ -327,6 +327,24 @@ h2 { font-size: 26px; line-height: 1.15; letter-spacing: 0; }
 .btn-primary { background: var(--brand-red); border-color: var(--brand-red); color: #fff; }
 .btn-primary:hover { background: var(--brand-red-hover); }
 .btn-quiet { border-color: transparent; background: transparent; color: var(--brand-red); }
+.btn-with-arrow {
+  padding-right: 10px;
+}
+.btn-with-arrow i {
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-items: center;
+  margin-left: 3px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.16);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.22);
+  transition: transform .24s cubic-bezier(.32,.72,0,1), background .24s var(--ease-standard);
+}
+.btn-with-arrow:hover i {
+  transform: translateX(2px);
+  background: rgba(255,255,255,.22);
+}
 .spinner {
   width: 16px;
   height: 16px;

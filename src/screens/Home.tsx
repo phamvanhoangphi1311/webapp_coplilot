@@ -24,10 +24,6 @@ export function Home({ onStart }: HomeProps) {
             </Button>
             <Button onClick={() => onStart("load")}>Load case</Button>
           </div>
-          <footer className="home-footnote">
-            <span>AI Copilot demo MVP</span>
-            <span>Surgical planning + AI-assisted review</span>
-          </footer>
         </div>
         <div className="home-center">
           <div className="console-device" aria-label="AI Copilot console preview">

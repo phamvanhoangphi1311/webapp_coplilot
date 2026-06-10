@@ -147,11 +147,49 @@ h1, h2, p { margin: 0; }
 h1 { font-size: 42px; line-height: 1.08; letter-spacing: 0; }
 h2 { font-size: 26px; line-height: 1.15; letter-spacing: 0; }
 .brand-copy h1 {
-  max-width: 520px;
-  font-size: 52px;
-  line-height: .98;
+  max-width: 560px;
+  font-size: 54px;
+  line-height: .96;
   letter-spacing: 0;
   text-wrap: balance;
+}
+.hero-title {
+  display: grid;
+  gap: 10px;
+}
+.hero-title-product {
+  position: relative;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 18px 8px 0;
+  color: var(--brand-red);
+  font-weight: 850;
+  letter-spacing: 0;
+}
+.hero-title-product:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -10px;
+  bottom: 1px;
+  height: 12px;
+  z-index: -1;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(147,23,23,.18), rgba(147,23,23,.035));
+}
+.hero-title-product:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 1px;
+  height: calc(100% - 18px);
+  background: linear-gradient(180deg, rgba(147,23,23,.12), rgba(147,23,23,.52), rgba(5,64,128,.36));
+}
+.hero-title-rest {
+  display: block;
+  color: var(--text);
 }
 .brand-copy > p:not(.eyebrow) {
   max-width: 440px;

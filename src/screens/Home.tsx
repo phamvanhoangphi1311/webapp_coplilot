@@ -12,7 +12,10 @@ export function Home({ onStart }: HomeProps) {
       <div className="brand-panel">
         <div className="brand-copy">
           <p className="eyebrow">CardioVis</p>
-          <h1>AI Copilot for the surgical console.</h1>
+          <h1 className="hero-title">
+            <span className="hero-title-product">AI Copilot</span>
+            <span className="hero-title-rest">for the surgical console.</span>
+          </h1>
           <p>Plan the case, calibrate segmentation overlays, and generate post-surgery reports from one focused operating-room workspace.</p>
           <div className="home-actions home-actions-left">
             <Button variant="primary" className="btn-with-arrow" onClick={() => onStart("new")}>

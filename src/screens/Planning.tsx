@@ -69,6 +69,11 @@ export function Planning({ mode, overlayColor, onModeChange, onOverlayColor, onS
               <Dropdown key={field.id} label={field.label} required={field.required} value={field.value} options={field.options} onChange={(value) => updateField(field.id, value)} />
             ))}
           </div>
+          <div className="form-actions">
+            <Button>Save Draft</Button>
+            <Button variant="primary" loading={calibrating} disabled={!complete} onClick={calibrate}>Save and Calibration</Button>
+          </div>
+          {!complete ? <p className="hint">Complete required fields to start calibration.</p> : null}
           {mode === "load" && loaded ? (
             <div className={`timeline ${timelineReady ? "ready" : ""}`}>
               <div className="timeline-head">
@@ -89,11 +94,6 @@ export function Planning({ mode, overlayColor, onModeChange, onOverlayColor, onS
               </div>
             </div>
           ) : null}
-          <div className="form-actions">
-            <Button>Save Draft</Button>
-            <Button variant="primary" loading={calibrating} disabled={!complete} onClick={calibrate}>Save and Calibration</Button>
-          </div>
-          {!complete ? <p className="hint">Complete required fields to start calibration.</p> : null}
         </div>
       </div>
 

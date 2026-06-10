@@ -653,7 +653,7 @@ h2 { font-size: 26px; line-height: 1.15; letter-spacing: 0; }
   min-width: 0;
   display: grid;
   align-items: center;
-  justify-items: end;
+  justify-items: center;
 }
 .copilot-left-controls {
   position: absolute;
@@ -804,7 +804,7 @@ h2 { font-size: 26px; line-height: 1.15; letter-spacing: 0; }
   max-height: 100vh;
   border-radius: 0;
   box-shadow: none;
-  justify-self: end;
+  justify-self: center;
 }
 .is-copilot-fullscreen .panel-mode .video-stage {
   width: min(100%, 177.778vh);

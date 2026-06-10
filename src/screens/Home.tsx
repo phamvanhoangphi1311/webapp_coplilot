@@ -12,14 +12,14 @@ export function Home({ onStart }: HomeProps) {
         <div className="brand-copy">
           <p className="eyebrow">CardioVis Copilot</p>
           <h1>AI guidance for the surgical console.</h1>
-          <p>[CUNG CẤP SAU]</p>
+          <p>Plan the case, calibrate segmentation overlays, and generate post-surgery reports from one focused operating-room workspace.</p>
           <div className="home-actions home-actions-left">
             <Button variant="primary" onClick={() => onStart("new")}>New case</Button>
             <Button onClick={() => onStart("load")}>Load case</Button>
           </div>
           <footer className="home-footnote">
             <span>CardioVis Copilot demo MVP</span>
-            <span>[CUNG CẤP SAU]</span>
+            <span>Built for surgical planning and AI-assisted review</span>
           </footer>
         </div>
         <div className="home-center">
@@ -36,7 +36,7 @@ export function Home({ onStart }: HomeProps) {
             </div>
             <div className="preview-footer">
               <strong>Segmentation workspace</strong>
-              <small>[CUNG CẤP SAU]</small>
+              <small>Overlay preview</small>
             </div>
           </div>
         </div>

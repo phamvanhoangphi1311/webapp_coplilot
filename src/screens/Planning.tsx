@@ -144,8 +144,8 @@ export function Planning({ mode, overlayColor, onModeChange, onOverlayColor, onS
           </div>
           {[1, 2].map((index) => (
             <div className="setting-card placeholder-setting" key={index}>
-              <div><strong>[CUNG CẤP SAU]</strong><small>[CUNG CẤP SAU]</small></div>
-              <div className="placeholder-control">[CUNG CẤP SAU]</div>
+              <div><strong>{index === 1 ? "Overlay emphasis" : "Label density"}</strong><small>{index === 1 ? "Adjust how strongly detected regions are emphasized during the case." : "Control how many overlay labels remain visible while operating."}</small></div>
+              <div className="placeholder-control">{index === 1 ? "Balanced" : "Essential labels"}</div>
               <div className="setting-preview"><OverlayLayer color={overlayColor} compact /></div>
             </div>
           ))}
